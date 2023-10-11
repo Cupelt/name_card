@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="box_shadow">
+                <div id="profile_box" class="box"></div>
+            </div>
+            <h1 class="introduction ani_1">Cupelt - 2005.08.21</h1>
+            <h3 class="introduction ani_2">No Gwangju no money.</h2>
+        </div>
+    </div>
+    
+    <script>
+        const img = document.createElement('img')
+        img.className = "profile"
+        img.src = "https://avatars.githubusercontent.com/u/57065968?v=4"
+
+        document.getElementById("profile_box").append(img)
+    </script>
+</body>
+</html>
