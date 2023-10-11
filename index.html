@@ -7,22 +7,48 @@
     <title>Cupelt Portfolio</title>
 </head>
 <body>
-    <div id="main">
+    <div class="chapter">
         <div class="container">
             <div class="box_shadow">
-                <div id="profile_box" class="box"></div>
+                <div id="profile_box"></div>
             </div>
-            <h1 class="introduction ani_1">Cupelt - 2005.08.21</h1>
-            <h3 class="introduction ani_2">No Gwangju no money.</h2>
+            <h1 class="init_animation" style="--delay: 150ms">Cupelt - 2005.08.21</h1>
+            <h3 class="init_animation" style="--delay: 300ms">
+                No Gwangju no money.
+            </h3>
         </div>
     </div>
+
+    <div class="chapter">
+        <h1 class="init_animation" style="--delay: 450ms"> ━━━━ Introduction ━━━━ </h1>
+        <h3 class="init_animation" style="--delay: 600ms">
+            <br> Just developer
+            <br> I just make a spaghetti code
+        </h3>
+        <h3 class="init_animation" style="--delay: 750ms">
+            <br> So, you should make spaghetti code together<br>
+        </h3>
+    </div>
+
+    <div class="chapter">
+        <h1 class="view_animation" style="--delay: 450ms"> ━━━━ Introduction ━━━━ </h1>
+        <h3 class="view_animation" style="--delay: 450ms">
+            <br> Just developer
+            <br> I just make a spaghetti code
+        </h3>
+        <h3 class="view_animation" style="--delay: 600ms">
+            <br> So, you should make spaghetti code together<br>
+        </h3>
+    </div>
     
-    <script>
+    
+    <script> // load Githb profile image
         const img = document.createElement('img')
         img.className = "profile"
         img.src = "https://avatars.githubusercontent.com/u/57065968?v=4"
 
         document.getElementById("profile_box").append(img)
     </script>
+    <script src="index.js">//scroll logic</script>
 </body>
 </html>
