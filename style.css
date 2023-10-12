@@ -16,9 +16,14 @@ body{
     display:none;
 }
 
-.chapter {
+.head {
     width: 100%;
     height: 500px;
+}
+
+.chapter {
+    width: 100%;
+    height: 300px;
 }
 
 .container {
@@ -52,8 +57,12 @@ body{
     animation: show_up 1s var(--delay) ease forwards;
 }
 
-.view_animation {
+.scroll_animation {
     opacity: 0;
+}
+
+.trigger_animation {
+    animation: show_up 1s var(--delay) ease forwards;
 }
 
 @keyframes show_up {
@@ -78,7 +87,31 @@ body{
     }
 }
 
-h1, h3 {
+.list_block {
+    width: 500px;
+    height: 200px;
+    background-color: var(--color);
+
+    margin: 0 auto;
+    margin-top: 10px;
+    transform: translate(0%, 10px);
+
+    border-radius: 25px 25px 25px 25px / 25px 25px 25px 25px;
+    overflow: hidden;
+}
+
+.object {
+    float: left;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    transform: translate(0%, 25px);
+
+    border-radius: 25px / 25px;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
     margin: auto;
     text-align: center;
     color: aliceblue;
