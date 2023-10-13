@@ -130,11 +130,18 @@
     </div>
     
     
+    
     <script> // load Githb profile image
         const img = document.createElement('img')
         img.className = "profile"
         img.src = "https://avatars.githubusercontent.com/u/57065968?v=4"
 
+        const link = document.createElement('link')
+        link.rel = "icon"
+        link.type = "image/png"
+        link.href = "https://avatars.githubusercontent.com/u/57065968?v=4"
+
+        document.head.append(link)
         document.getElementById("profile_box").append(img)
     </script>
     <script src="index.js">//scroll logic</script>
